@@ -1,0 +1,20 @@
+# Unity 관련 무시 목록
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Ll]ogs/
+UserSettings/
+MemoryCaptures/
+
+# IDE/툴 관련 무시
+.vscode/
+*.csproj
+*.sln
+*.user
+*.pidb
+*.tmp
+*.apk
+*.exe
+*.pdb
+*.DS_Store
