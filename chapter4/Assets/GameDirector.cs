@@ -1,7 +1,7 @@
 using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
-using TMPro; //TextMesPro를 사용하는데 필요하다.
+using TMPro; //TextMeshPro를 사용하는데 필요하다.
 
 public class GameDirector : MonoBehaviour
 {
@@ -19,6 +19,6 @@ public class GameDirector : MonoBehaviour
     void Update()
     {
       float length = this.flag.transform.position.x - this.car.transform.position.x;
-      this.distance.GetComponent<TextMesProUGUI>().test = "Distance:"+length.ToString("F2")+"m";
+      this.distance.GetComponent<TextMeshProUGUI>().text = "Distance:"+length.ToString("F2")+"m";
     }
 }
