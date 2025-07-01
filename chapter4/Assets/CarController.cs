@@ -5,7 +5,7 @@ using UnityEngine;
 public class CarController:MonoBehaviour
 {
     float speed = 0f;
-    Vector2 StartPos;
+    Vector2 startPos;
     
     void Start()
     {
@@ -17,18 +17,18 @@ public class CarController:MonoBehaviour
       //스와이프의 길이를 구한다.
       if(Input.GetMouseButtonDown(0))
       {
-        this.StartPos = Input.mousePosition;
+        this.startPos = Input.mousePosition;
       }
       else if (Input.GetMouseButtonUp(0))
       {
         //마우스 버튼에서 손가락을 떼었을 때 좌포
         Vector2 endPos = Input.mousePosition;
-        float swipeLength = endPos.x - this.StartPos.x;
+        float swipeLength = endPos.x - this.startPos.x;
 
         //스와이프 길이를 처음 속도로 변환한다.
         this.speed = swipeLength / 500.0f;
       }
       transform.Translate(this.speed, 0 ,0); //이동
-      this.speed *= 0.93f;                   //감속
+      this.speed *= 0.98f;                   //감속
     }
 }
