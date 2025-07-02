@@ -8,6 +8,15 @@ public class PlrayerController : MonoBehaviour
     Application.targetFrameRate = 60;
   }
 
+  public void LButtonDown()
+  {
+    transform.Translate(-3, 0, 0);
+  }
+
+  public void RButtonDown()
+  {
+    transform.Translate(3, 0, 0);
+  }
   void Update()
   {
     //왼쪽 화살표가 눌렀을 때
