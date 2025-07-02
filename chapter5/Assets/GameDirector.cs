@@ -1,15 +1,15 @@
 using UnityEngine;
-using System.Collcetions;
-using System.Collcetione.Generic;
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine.UI;             //ui를 사용하므로 추가
 
-public class GameDirector
+public class GameDirector:MonoBehaviour
 {
 
   GameObject hpGauge;
   void Start()
   {
-    this.hpGauge = GameObect.Find("hpGauge");
+    this.hpGauge = GameObject.Find("hpGauge");
   }
 
   public void DecreaseHp()
